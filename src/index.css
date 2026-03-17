@@ -1,42 +1,42 @@
 @import "tailwindcss";
 
 /* =============================================
-   DESIGN SYSTEM — V9.2 "Airy Tricolor"
-   Warm, Rich, Multi-color Palette
+   DESIGN SYSTEM — V10 "Universally Appealing Soft UX"
+   Clean, Accessible, Trustworthy, Modern Baseline
    ============================================= */
 
 :root {
   /* === BASE COLORS === */
-  --bg-main: #F4F3EF;       /* Warm Sand / Eggshell */
-  --bg-surface: #FFFFFF;    /* Card White */
-  --bg-alt: #EBE9E2;        /* Deeper Sand */
-  --bg-dark: #1E1C1A;       /* Deep Warm Near-black (for footer etc.) */
+  /* Very clean, standard light background */
+  --bg-main: #FFFFFF;       
+  --bg-surface: #FFFFFF;    
+  --bg-alt: #F3F4F6;        /* Subtle gray for alternate sections */
+  --bg-footer: #F8FAFC;     /* Very light slate blue/gray for footer */
   
   /* === TEXT === */
-  --text-main: #1D1D1B;     /* Warm Charcoal */
-  --text-muted: #706D65;    /* Stone Gray */
-  --text-light: #FBF9F6;    /* Light warm white */
+  --text-main: #0F172A;     /* Slate-900: Deep readable navy/black */
+  --text-muted: #64748B;    /* Slate-500: Softer text */
+  --text-light: #0F172A;    /* Replacing white text in footer with dark */
 
-  /* === ACCENT PALETTE (Multi-color!) === */
-  /* Terracotta — warmth, life, artisan */
-  --accent-terra: #C0653A;
-  --accent-terra-light: #F5E8DF;
+  /* === ACCENT PALETTE (Universally accepted Blues/Teals) === */
+  /* Primary Brand Color — Royal Blue (Trust, Tech, Clean) */
+  --accent-base: #2563EB;   /* Blue-600 */
+  --accent-hover: #1D4ED8;  /* Blue-700 */
   
-  /* Indigo — confidence, expertise, digital */
-  --accent-indigo: #3B4F8C;
-  --accent-indigo-light: #E6EAF6;
+  /* Secondary Accents for Tags */
+  --accent-ocean: #0891B2;  /* Cyan-600 */
+  --accent-ocean-light: #CFFAFE;
   
-  /* Sage — calm, trustworthy, growth */
-  --accent-sage: #5B7C65;
-  --accent-sage-light: #E8F0EA;
+  --accent-indigo: #4F46E5; /* Indigo-600 */
+  --accent-indigo-light: #E0E7FF;
   
-  /* Main CTA color (primary) */
-  --accent-cta: #1E1C1A;       /* Near Black — very sophisticated CTA */
-  --accent-cta-hover: #3B3836;
+  /* Main CTA color */
+  --accent-cta: #2563EB;       
+  --accent-cta-hover: #1D4ED8;
 
   /* === BORDERS === */
-  --border-subtle: #E4E2DA;
-  --border-dark: rgba(30, 28, 26, 0.15);
+  --border-subtle: #E2E8F0; /* Slate-200 */
+  --border-dark: #CBD5E1;   /* Slate-300 */
 
   /* === TYPOGRAPHY === */
   --font-display: 'Outfit', sans-serif;
@@ -48,10 +48,10 @@
   --radius-lg: 24px;
   --radius-pill: 9999px;
 
-  /* === SHADOWS === */
-  --shadow-sm: 0 4px 20px rgba(29, 29, 27, 0.05);
-  --shadow-card: 0 10px 40px -8px rgba(29, 29, 27, 0.08);
-  --shadow-hover: 0 24px 60px -12px rgba(29, 29, 27, 0.14);
+  /* === SHADOWS (Softer, universally appealing) === */
+  --shadow-sm: 0 4px 12px rgba(15, 23, 42, 0.04);
+  --shadow-card: 0 10px 30px -5px rgba(15, 23, 42, 0.08); /* Much softer */
+  --shadow-hover: 0 20px 40px -10px rgba(15, 23, 42, 0.12);
   
   --ease-slow: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -75,18 +75,18 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   color: var(--text-main);
 }
 
 a { color: inherit; text-decoration: none; }
-::selection { background: var(--accent-terra); color: #FFF; }
+::selection { background: var(--accent-base); color: #FFF; }
 
 /* === LAYOUT === */
 .container {
-  max-width: 1400px;
+  max-width: 1280px; /* Slightly narrower for better reading line-length */
   margin: 0 auto;
-  padding: 0 clamp(2rem, 5vw, 4rem);
+  padding: 0 clamp(1.5rem, 5vw, 3rem); /* Better mobile padding */
 }
 
 /* === BUTTONS === */
@@ -94,82 +94,80 @@ a { color: inherit; text-decoration: none; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   background-color: var(--accent-cta);
   color: #FFF;
   font-family: var(--font-body);
   font-size: 1rem;
-  font-weight: 700;
-  padding: 1.15rem 2.5rem;
+  font-weight: 600;
+  padding: 1rem 2rem; /* Better mobile proportion */
   border-radius: var(--radius-pill);
   border: none;
   cursor: pointer;
-  transition: all 0.4s var(--ease-slow);
+  transition: all 0.3s ease;
   text-decoration: none;
-  letter-spacing: 0.01em;
 }
 .btn-primary:hover {
   background-color: var(--accent-cta-hover);
   transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(30, 28, 26, 0.18);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
 }
 
 .btn-outline {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   background-color: transparent;
   color: var(--text-main);
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 600;
-  padding: 1.15rem 2.5rem;
+  padding: 1rem 2rem;
   border-radius: var(--radius-pill);
   border: 1.5px solid var(--border-dark);
   cursor: pointer;
-  transition: all 0.4s var(--ease-slow);
+  transition: all 0.3s ease;
 }
 .btn-outline:hover {
-  background-color: var(--text-main);
-  color: #FFF;
+  background-color: var(--bg-alt);
   border-color: var(--text-main);
   transform: translateY(-2px);
 }
 
 /* === TAG PILLS === */
-.tag-terra {
-  background: var(--accent-terra-light);
-  color: var(--accent-terra);
+.tag-blue {
+  background: var(--accent-indigo-light);
+  color: var(--accent-base);
   font-family: var(--font-body);
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  padding: 0.4rem 1rem;
+  padding: 0.35rem 0.85rem;
   border-radius: var(--radius-pill);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.tag-ocean {
+  background: var(--accent-ocean-light);
+  color: var(--accent-ocean);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   display: inline-block;
 }
 .tag-indigo {
-  background: var(--accent-indigo-light);
-  color: var(--accent-indigo);
+  background: #F3E8FF; /* Purple-100 */
+  color: #7E22CE;      /* Purple-700 */
   font-family: var(--font-body);
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  padding: 0.4rem 1rem;
+  padding: 0.35rem 0.85rem;
   border-radius: var(--radius-pill);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  display: inline-block;
-}
-.tag-sage {
-  background: var(--accent-sage-light);
-  color: var(--accent-sage);
-  font-family: var(--font-body);
-  font-size: 0.78rem;
-  font-weight: 700;
-  padding: 0.4rem 1rem;
-  border-radius: var(--radius-pill);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   display: inline-block;
 }

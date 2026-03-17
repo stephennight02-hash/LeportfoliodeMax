@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const Hero = () => {
   return (
     <>
-      {/* Fixed Navbar */}
+      {/* Fixed Navbar - Clean & Light */}
       <motion.nav
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -17,32 +17,33 @@ const Hero = () => {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          padding: '1.75rem clamp(2rem, 5vw, 4rem)',
-          backgroundColor: 'rgba(244,243,239,0.85)',
-          backdropFilter: 'blur(16px)',
+          padding: '1.25rem clamp(1.5rem, 5vw, 3rem)',
+          backgroundColor: 'rgba(255, 255, 255, 0.90)',
+          backdropFilter: 'blur(12px)',
           borderBottom: '1px solid var(--border-subtle)',
         }}
       >
-        {/* Logo */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        {/* Logo - Universally appealing Blue */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <div style={{
-            width: 38, height: 38,
+            width: 36, height: 36,
             backgroundColor: 'var(--accent-base)',
             borderRadius: 8,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
+            boxShadow: '0 4px 10px rgba(37, 99, 235, 0.2)',
           }}>
-            <span style={{ color: '#FFF', fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.15rem', lineHeight: 1 }}>M</span>
+            <span style={{ color: '#FFF', fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.1rem', lineHeight: 1 }}>M</span>
           </div>
-          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1.15rem', color: 'var(--text-main)', letterSpacing: '-0.01em' }}>
+          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1.1rem', color: 'var(--text-main)', letterSpacing: '-0.01em' }}>
             Maxime Fivet<span style={{ color: 'var(--accent-base)' }}>.</span>
           </span>
         </div>
 
         {/* Nav Links - Desktop Only */}
-        <div className="nav-desktop" style={{ display: 'none', gap: '2.5rem', alignItems: 'center' }}>
+        <div className="nav-desktop" style={{ display: 'none', gap: '2rem', alignItems: 'center' }}>
           {[
             { label: 'Réalisations', href: '#projets' },
-            { label: 'Pourquoi moi ?', href: '#avantages' },
+            { label: 'Mon approche', href: '#avantages' },
           ].map(item => (
             <a
               key={item.label}
@@ -52,8 +53,7 @@ const Hero = () => {
                 fontSize: '0.95rem',
                 fontWeight: 600,
                 color: 'var(--text-muted)',
-                letterSpacing: '0.01em',
-                transition: 'color 0.25s',
+                transition: 'color 0.2s',
               }}
               onMouseEnter={e => e.target.style.color = 'var(--text-main)'}
               onMouseLeave={e => e.target.style.color = 'var(--text-muted)'}
@@ -61,85 +61,91 @@ const Hero = () => {
               {item.label}
             </a>
           ))}
-          <a href="#contact" className="btn-primary" style={{ padding: '0.75rem 1.75rem', fontSize: '0.9rem' }}>
+          <a href="#contact" className="btn-primary" style={{ padding: '0.65rem 1.5rem', fontSize: '0.9rem' }}>
             Demander un devis
           </a>
         </div>
       </motion.nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-[95vh] flex flex-col justify-center items-center text-center overflow-hidden bg-[var(--bg-main)]"
-        style={{ paddingTop: 'clamp(8rem, 18vh, 12rem)', paddingBottom: 'clamp(6rem, 14vh, 10rem)' }}>
+      <section className="relative min-h-[90vh] flex flex-col justify-center items-center text-center overflow-hidden bg-[var(--bg-main)]"
+        style={{ paddingTop: 'clamp(7rem, 15vh, 10rem)', paddingBottom: 'clamp(4rem, 10vh, 8rem)' }}>
 
-        {/* Subtle Side Decorators */}
-        <div className="side-decor-left" style={{
-          position: 'absolute', left: 'clamp(2rem, 5vw, 4rem)', top: '50%', transform: 'translateY(-50%)',
-          display: 'none', flexDirection: 'column', gap: 8, alignItems: 'center',
-        }}>
-          <div style={{ width: 1, height: 80, backgroundColor: 'var(--border-dark)' }} />
-          <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.7rem', fontWeight: 600, color: 'var(--text-muted)', letterSpacing: '0.15em', writingMode: 'vertical-rl', textTransform: 'uppercase' }}>
-            Belgique
-          </span>
-          <div style={{ width: 1, height: 80, backgroundColor: 'var(--border-dark)' }} />
-        </div>
+        {/* Subtle Background Accent */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-50 rounded-full blur-[100px] -z-10 opacity-60 pointer-events-none" />
 
         <div className="container max-w-4xl z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: 'easeOut' }}
-            style={{ marginBottom: '2.5rem' }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            style={{ marginBottom: '1.5rem' }}
           >
             <span style={{
               fontFamily: 'var(--font-body)',
               fontWeight: 700,
-              fontSize: '0.8rem',
-              letterSpacing: '0.2em',
+              fontSize: '0.75rem',
+              letterSpacing: '0.15em',
               color: 'var(--accent-base)',
               textTransform: 'uppercase',
-              display: 'inline-flex', alignItems: 'center', gap: 10,
+              display: 'inline-flex', alignItems: 'center', gap: 8,
+              backgroundColor: 'var(--accent-indigo-light)',
+              padding: '0.4rem 1rem',
+              borderRadius: '999px',
             }}>
-              <span style={{ width: 40, height: 1, backgroundColor: 'var(--accent-base)', display: 'inline-block' }} />
               Développeur Web Indépendant
-              <span style={{ width: 40, height: 1, backgroundColor: 'var(--accent-base)', display: 'inline-block' }} />
             </span>
           </motion.div>
 
           <motion.h1
-            style={{ fontSize: 'clamp(2.8rem, 8vw, 5.5rem)', fontWeight: 900, lineHeight: 1.07, marginBottom: '2.5rem', color: 'var(--text-main)', fontFamily: 'var(--font-display)', letterSpacing: '-0.03em' }}
-            initial={{ opacity: 0, y: 40 }}
+            style={{ 
+              fontSize: 'clamp(2.5rem, 7vw, 5rem)', 
+              fontWeight: 800, 
+              lineHeight: 1.1, 
+              marginBottom: '1.5rem', 
+              color: 'var(--text-main)', 
+              fontFamily: 'var(--font-display)', 
+              letterSpacing: '-0.03em' 
+            }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.1, ease: [0.2, 0.8, 0.2, 1] }}
+            transition={{ duration: 1, delay: 0.1, ease: [0.2, 0.8, 0.2, 1] }}
           >
-            Des sites web qui attirent<br className="hidden md:block" />
-            vos clients et développent<br className="hidden md:block" />
-            <span style={{ color: 'var(--accent-base)' }}>votre business.</span>
+            Des sites vitrines qui<br className="hidden md:block" />
+            inspirent confiance et<br className="hidden md:block" />
+            <span style={{ color: 'var(--accent-base)' }}>développent vos ventes.</span>
           </motion.h1>
           
           <motion.p
-            style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)', color: 'var(--text-muted)', lineHeight: 1.65, maxWidth: 680, margin: '0 auto 3.5rem', fontFamily: 'var(--font-body)' }}
-            initial={{ opacity: 0, y: 40 }}
+            style={{ 
+              fontSize: 'clamp(1rem, 2vw, 1.25rem)', 
+              color: 'var(--text-muted)', 
+              lineHeight: 1.6, 
+              maxWidth: 600, 
+              margin: '0 auto 2.5rem', 
+              fontFamily: 'var(--font-body)' 
+            }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.2, ease: [0.2, 0.8, 0.2, 1] }}
+            transition={{ duration: 1, delay: 0.2, ease: [0.2, 0.8, 0.2, 1] }}
           >
-            Artisans, restaurateurs, professionnels : obtenez une vitrine digitale performante, unique et conçue pour convertir vos visiteurs en clients.
+            Artisans, professionnels et créateurs : obtenez une plateforme digitale claire, moderne et pensée pour transformer vos visiteurs en clients.
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
-            style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '1.25rem' }}
+            transition={{ duration: 1, delay: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
+            style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '1rem' }}
           >
-            <a href="#projets" className="btn-primary">Voir les réalisations</a>
-            <a href="#contact" className="btn-outline">Demander un devis</a>
+            <a href="#projets" className="btn-primary w-full sm:w-auto">Voir les réalisations</a>
+            <a href="#contact" className="btn-outline w-full sm:w-auto">Demander un devis</a>
           </motion.div>
         </div>
 
         <style>{`
           @media (min-width: 768px) {
             .nav-desktop { display: flex !important; }
-            .side-decor-left { display: flex !important; }
           }
         `}</style>
       </section>
