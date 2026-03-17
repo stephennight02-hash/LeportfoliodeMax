@@ -78,7 +78,7 @@ const Benefits = () => {
               </div>
               
               {/* Title */}
-              <div style={{ flex: '0 0 300px' }}>
+              <div className="w-full md:w-[300px] md:flex-shrink-0">
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1.4rem', color: 'var(--text-main)', margin: 0 }}>
                   {item.title}
                 </h3>
