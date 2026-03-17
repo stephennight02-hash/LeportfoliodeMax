@@ -89,7 +89,7 @@ const Hero = () => {
               padding: '0.4rem 1rem',
               borderRadius: '999px',
             }}>
-              Design Premium • Tarifs Indépendant
+              Design Premium • Maintenance Long Terme
             </span>
           </motion.div>
 
