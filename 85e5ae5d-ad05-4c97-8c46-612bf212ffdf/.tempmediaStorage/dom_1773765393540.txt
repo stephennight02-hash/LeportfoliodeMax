@@ -1,0 +1,13 @@
+[0] (500,346)<div  />
+	Site vitrine gastronomique mettant en valeur une cuisine raffinée dans un cadre élégant. Réservation en ligne, menu interactif et photographies d'ambiance.
+	[1] (322,96)<a class='btn-primary' href='https://l-picurien.vercel.app/'>Visiter le site />
+	Site premium pour garage spécialisé avec système de prise de rendez-vous en ligne, vitrine des services et présentation de l'équipe.
+	[2] (678,96)<a class='btn-primary' href='https://le-garage-pro.vercel.app/'>Visiter le site />
+	0
+	3
+	Coiffure
+	Lookbook
+	Vitrine
+	Studio Ciseaux & Lames
+	Barbier Urbain
+	Plateforme vitrine moderne pour salon de coiffure avec lookbook interactif, prise de rendez-vous et présentation des prestations.

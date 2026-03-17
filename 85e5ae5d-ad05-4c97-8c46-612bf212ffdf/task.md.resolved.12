@@ -1,0 +1,30 @@
+# Refonte UI — Hyper-Modern Premium (V8)
+
+## Objectif
+Générer l'effet "WOW" pour impressionner les commerçants (restaurateurs, artisans). Remettre de la matière, du relief, de la modernité riche (glassmorphism, gradients de bon goût, animations complexes) sans retomber dans le cyber-punk.
+
+## Phase 1 — Socle Design & Effets
+- [ ] **Typographie** : `Outfit` (Titres ultra modernes) et `Plus Jakarta Sans` (Corps texte très "Tech Premium").
+- [ ] **Thème Sombre Premium** : 
+  - Bg: `#050505` (Noir profond)
+  - Bg Secondaire: `#111111` (Noir de surface)
+  - Accent / Glow: Dégradés Or/Bronze ou Bleu Nuit profond.
+- [ ] **UI Elements** : Glassmorphism (`backdrop-blur`, bg semi-transparent), bordures luminescentes (1px rgba(255,255,255,0.1)), ombres colorées douces ("glow").
+
+## Phase 2 — Composants (Le retour de la richesse)
+- [ ] **Hero Section** : 
+  - Grand titre avec un dégradé textuel (Gradient text).
+  - Badges flottants en glassmorphism (ex: "Performance", "Mobile First").
+  - Arrière-plan subtilement animé ou avec des halos de lumière (Glows).
+- [ ] **Section Projets (Riche)** : 
+  - Cartes avec effet de survol 3D ou Glow.
+  - Grandes images, typographie très soignée, boutons avec effets de brillance.
+- [ ] **Retour des Bénéfices (Services)** :
+  - Restaurer [Benefits.jsx](file:///c:/Users/maxim/OneDrive/Bureau/sitevitrine/portfolio/src/components/Benefits.jsx) pour remplir le site et rassurer le commerçant (Génération de CA, Design Sur-Mesure, etc.).
+  - Cartes en glassmorphism sur un fond avec "noise" ou halo lumineux.
+- [ ] **Footer Impressionnant** :
+  - Massive CTA, effet de profondeur, liens élégants.
+
+## Phase 3 — Intégration Totale
+- [ ] [App.jsx](file:///c:/Users/maxim/OneDrive/Bureau/sitevitrine/portfolio/src/App.jsx) : Réintégrer un Lenis complet et le routing standard.
+- [ ] Finitions : [Cursor](file:///c:/Users/maxim/OneDrive/Bureau/sitevitrine/portfolio/src/components/CustomCursor.jsx#4-115) ou interactions poussées si nécessaire, sans gêner la lecture.

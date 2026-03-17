@@ -1,0 +1,31 @@
+# Refonte UI — Showcase "Anti-Dérapage" (V7)
+
+## Objectif Strict
+MONTRER ET VENDRE les 3 sites créés. Aucun écart créatif permis sur les couleurs ou les polices. Style "Startup / SaaS / Vitrine Moderne".
+
+## Phase 1 — Socle Strict (Design System)
+- [ ] **Typographie** : `Outfit` (Titres 600/800) et `Inter` (Textes 400/500). Mettre à jour [index.html](file:///c:/Users/maxim/OneDrive/Bureau/sitevitrine/portfolio/index.html).
+- [ ] **Couleurs** :
+  - Fond de page : `#F3F4F6` (Gris très clair)
+  - Texte principal : `#111827` (Gris anthracite profond)
+  - Cartes : `#FFFFFF` (Blanc pur)
+  - Accent / Boutons : `#2563EB` (Bleu Royal)
+- [ ] **UI Style** : Ombres douces (`shadow-xl`), coins arrondis (`rounded-2xl`), bordures subtiles (`border border-gray-200`). Relief assumé, pas de flat design.
+
+## Phase 2 — Structure Visuelle (Composants)
+- [ ] **App.jsx** : Retirer Framer Motion et Lenis complexes si non nécessaires pour prioriser la clarté (ou les garder très simples).
+- [ ] **Hero Section** :
+    - Titre centré : "Maxime Fivet. Créateur de sites vitrines sur-mesure."
+    - Sous-titre : "Je conçois des sites web modernes et performants pour les artisans, restaurateurs et professionnels. Découvrez mes dernières réalisations ci-dessous."
+- [ ] **La Vitrine (Projets)** : 80% de l'espace.
+    - Cartes horizontales (Image 50% gauche, Texte 50% droit sur Desktop).
+    - Image : Mockups d'ordinateurs (`unsplash`).
+    - Bouton Bleu : "Visiter le site en direct" vers les 3 liens Vercel.
+    - Effet hover : `hover:shadow-2xl hover:-translate-y-1 transition-all duration-300`.
+- [ ] **Footer (Appel à l'action)** :
+    - Bloc final : `bg-[#111827] text-white rounded-t-3xl`.
+    - Titre : "Un projet en tête ? Parlons-en."
+    - Gros bouton d'action bleu (`#2563EB`).
+
+## Phase 3 — Nettoyage
+- [ ] Supprimer [Benefits.jsx](file:///c:/Users/maxim/OneDrive/Bureau/sitevitrine/portfolio/src/components/Benefits.jsx) puisque le prompt V7 ne demande que Hero, Projets et Footer.

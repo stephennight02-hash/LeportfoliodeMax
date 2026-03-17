@@ -1,0 +1,40 @@
+# Portfolio Maxime Fivet — Modern Agency V3
+
+## 🚀 L'Équilibre Parfait (V3)
+
+Le portfolio a été mis à jour pour fusionner le sérieux du style **Corporate Premium** avec le dynamisme d'une **Agence Digitale Moderne**. L'objectif : rassurer par le contenu et le design clair, tout en prouvant l'expertise technique par des animations fluides et sophistiquées.
+
+Le site est en direct sur `http://localhost:5174` (ou `5173`).
+
+## ✨ Ce qui a été ajouté / modifié
+
+1. **Retour du Smooth Scrolling (Lenis)**
+   - Réintégration de Lenis mais configuré de manière beaucoup plus subtile (lerp ajusté) pour un effet "beurre" sans la sensation de flotter.
+
+2. **Animations Hero ("Stagger Reveal")**
+   - Le texte d'accroche principale apparaît désormais de manière fluide et décalée (mot par mot via Framer Motion).
+   - Un léger effet *parallax* a été ajouté sur un élément décoratif en arrière-plan (cercle lumineux diffus) relié au `useScroll`.
+
+3. **Interactions "Magnetic" Sophistiquées**
+   - Le composant [MagneticButton](file:///c:/Users/maxim/OneDrive/Bureau/sitevitrine/portfolio/src/components/MagneticButton.jsx#4-48) fait son grand retour, mais propulsé par les *Springs* mathématiques de Framer Motion. 
+   - L'effet est configuré de façon subtile (attraction pondérée à 20% de la distance) : le bouton suit le curseur très légèrement, donnant une sensation premium sans désorienter les clients plus âgés.
+   - Appliqué aux boutons "Voir mes réalisations", "Me contacter" et aux liens réseaux.
+
+4. **Grille de Projets V3 (Masques & Hover 3D)**
+   - L'apparition des cartes projets est désormais "staggered" (en cascade).
+   - Au survol (hover) : L'image fait un très léger parallax via zoom interne, et une ombre portée lumineuse (halo) apparaît dynamiquement derrière la carte. Les bordures s'allument.
+
+5. **Section "L'Atout Stratégique" (Glassmorphism)**
+   - Apparition fluide en cascade des 3 cartes bénéfices (Sur-mesure, Mobile-First, Accompagnement).
+   - Ajout d'un effet "Glassmorphism" au hover : fond ultra-léger et bordures qui réagissent, soutenues par une rotation infinie quasi imperceptible de sphères colorées en arrière-plan.
+
+## 🛠️ Stack Technique Final
+
+- **React + Vite**
+- **Tailwind CSS** (v4, Design System complet)
+- **Framer Motion** (Spring physics, Variants, StaggerChildren, useScroll, useTransform)
+- **Lenis** (Vanilla JS implémenté via `useEffect`)
+
+## ✅ Conclusion
+
+Cette V3 est le compromis idéal : **La forme démontre le savoir-faire technique (animations fluides, 60fps, physics springs), tandis que le fond et les couleurs (Clair/Marine/Or) inspirent confiance, stabilité et professionnalisme.**

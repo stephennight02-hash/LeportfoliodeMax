@@ -1,0 +1,29 @@
+# Refonte UI — Hyper-Modern Premium (V8)
+
+## Objectif
+Générer l'effet "WOW" pour impressionner les commerçants (restaurateurs, artisans). Remettre de la matière, du relief, de la modernité riche (glassmorphism, gradients de bon goût, animations complexes).
+
+## Phase 1 — Socle Design & Effets
+- [x] **Typographie** : `Outfit` (Titres ultra modernes) et `Plus Jakarta Sans` (Corps texte très "Tech Premium").
+- [x] **Thème Sombre Premium** : 
+  - Bg: `#050505` (Noir profond)
+  - Bg Secondaire: `#111111` (Noir de surface)
+  - Accent / Glow: Dégradés Or/Bronze (`#EAB308`).
+- [x] **UI Elements** : Glassmorphism (`backdrop-blur`, bg semi-transparent), ombres colorées douces ("glow").
+
+## Phase 2 — Composants (Le retour de la richesse)
+- [x] **Hero Section** : 
+  - Grand titre avec un dégradé textuel (Gradient text).
+  - Badges flottants en glassmorphism.
+  - Arrière-plan subtilement animé ou avec des halos de lumière (Glows).
+- [x] **Section Projets (Riche)** : 
+  - Cartes avec effet de survol 3D ou Glow.
+  - Grandes images, typographie très soignée, boutons avec effets de brillance.
+- [x] **Retour des Bénéfices (Services)** :
+  - Restaurer [Benefits.jsx](file:///c:/Users/maxim/OneDrive/Bureau/sitevitrine/portfolio/src/components/Benefits.jsx) pour remplir le site et rassurer le commerçant (Génération de CA, Design Sur-Mesure, etc.).
+  - Cartes en glassmorphism sur un fond avec "noise" ou halo lumineux.
+- [x] **Footer Impressionnant** :
+  - Massive CTA, effet de profondeur, liens élégants.
+
+## Phase 3 — Intégration Totale
+- [x] [App.jsx](file:///c:/Users/maxim/OneDrive/Bureau/sitevitrine/portfolio/src/App.jsx) : Réintégrer un Lenis complet et le routing standard.

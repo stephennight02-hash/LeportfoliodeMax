@@ -1,0 +1,19 @@
+# Refonte UI — Quiet Luxury (V6)
+
+## Phase 1 — Socle Design & Typographie
+- [x] **Google Fonts** : Remplacer Playfair/Inter par `Syne` (Titres) et `Manrope` (Corps).
+- [x] **Variables CSS** : 
+  - Bg: `#FAFAF9` (Stone)
+  - Text: `#282824` (Anthracite)
+  - Accent: `#A46D4D` (Terracotta/Bronze)
+  - Bg Secondaire: `#EFECE8`
+
+## Phase 2 — Composants (Agency Look)
+- [x] **Hero** : Layout central épuré. Label "• Développeur Web Indépendant". H1 géant "Je conçois des expériences...". Sous-titre "Basé en Belgique". CTA "Voir mes réalisations" avec micro-interaction douce (`rounded-md`, hover lift).
+- [x] **Projets (Bento Grid)** : Grille asymétrique (`md:col-span-2`, etc). Cartes avec fond blanc, bordures fines (`border-stone-200`), zoom image fluide. 
+- [x] **Expertise (Services)** : Grands chiffres typographiques ("01.", "02.") au lieu des icônes. Design 3 colonnes minimaliste.
+- [x] **Footer** : Footer sombre pour ancrer la page (`--color-bg-dark`), avec uniquement l'email en affichage géant.
+- [x] **Technique** : Framer motion subtil (fade-up y:20), padding mobile généreux (`p-8`), Lenis conservé.
+
+## Phase 3 — QA
+- [x] Vérifier l'harmonie globale et le ressenti "Architectural".

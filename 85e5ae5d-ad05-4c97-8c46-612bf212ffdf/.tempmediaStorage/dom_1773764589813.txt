@@ -1,0 +1,26 @@
+Portfolio ✦ 2025
+[0] (472,82)<a href='#projets'>Projets />
+[1] (536,82)<a href='#stack'>Stack />
+[2] (601,82)<a href='#contact'>Contact />
+CD
+Scroll
+01 — Hero
+F
+R
+O
+N
+T
+E
+N
+D
+D
+E
+V
+E
+L
+O
+P
+E
+R
+Je conçois des expériences web qui allient performance technique et esthétique soignée. Chaque pixel compte.
+React · Vite · Motion

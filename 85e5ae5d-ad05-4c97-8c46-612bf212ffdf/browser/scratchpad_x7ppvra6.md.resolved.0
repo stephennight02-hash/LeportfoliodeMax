@@ -1,0 +1,12 @@
+# Task: Verify Portfolio Website
+
+## Plan
+1. [ ] Open http://localhost:5173
+2. [ ] Wait 6 seconds for preloader
+3. [ ] Capture screenshot
+4. [ ] Check console logs for errors
+5. [ ] Verify hero section and preloader behavior
+6. [ ] Report findings
+
+## Progress
+- Initializing plan...

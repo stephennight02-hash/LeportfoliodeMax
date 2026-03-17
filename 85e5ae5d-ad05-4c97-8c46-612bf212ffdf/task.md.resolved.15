@@ -1,0 +1,28 @@
+# Refonte UI — Airy Editorial (V9)
+
+## Objectif
+Sortir totalement du stéréotype "Développeur Geek Dark Mode". Adopter une esthétique "Boutique / Éditorial" ultra-lumineuse, organique, avec des espaces vides (whitespace) gigantesques pour donner un sentiment de luxe calme et de professionnalisme absolu.
+
+## Phase 1 — Socle Design & Couleurs
+- [ ] **Thème "Organic Premium"** : 
+  - Bg: `#F5F4F0` (Beige / Coquille d'œuf - Élégant, pas "blanc hôpital").
+  - Bg Cartes: `#FFFFFF` (Blanc pur pour le contraste).
+  - Texte: `#1D1D1B` (Gris-brun très profond, lisible et doux).
+  - Accent: `#2C4A3B` (Vert Forêt Profond - symbolise la croissance, l'artisanat, la confiance. Remplace le jaune ou le bleu classique).
+- [ ] **Typographie** : Conserver `Outfit` et `Plus Jakarta Sans`, idéales sur fond clair.
+- [ ] **Effets** : Supprimer le glassmorphism excessif et les "glows". Retour à des ombres très douces, nettes et architecturales.
+
+## Phase 2 — Composants (Aération Extrême)
+- [ ] **Hero Section** : 
+  - Doubler les paddings (ex: `py-56`).
+  - Centré, minimal.
+- [ ] **Projets** : 
+  - Cartes immenses, espacements gigantesques (`gap-32` ou `gap-40`).
+- [ ] **Bénéfices** :
+  - Icônes épurées en Vert Forêt.
+  - Grille extrêmement aérée.
+- [ ] **Footer** :
+  - Immense, rassurant, sur fond coloré (Vert Forêt) ou Beige plus foncé.
+
+## Phase 3 — QA
+- [ ] Vérifier que le site ne fait plus du tout "geek" mais plutôt "cabinet d'architecte" / "boutique de luxe".

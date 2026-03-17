@@ -1,0 +1,75 @@
+# Portfolio Creative Developer — Walkthrough
+
+## 🚀 Ce qui a été accompli
+
+Le portfolio ultra-avancé est **entièrement fonctionnel** sur `http://localhost:5173`.
+
+## Structure des fichiers
+
+```
+sitevitrine/portfolio/
+├── src/
+│   ├── components/
+│   │   ├── CustomCursor.jsx    ← dot + ring, spring physics, mix-blend-mode
+│   │   ├── Preloader.jsx       ← counter 0→100%, slide-up exit
+│   │   ├── MagneticButton.jsx  ← bouton attiré par le curseur
+│   │   ├── Hero.jsx            ← typographie géante, stagger lettre/lettre
+│   │   ├── Projects.jsx        ← scroll horizontal → vertical
+│   │   ├── MarqueeText.jsx     ← double marquee infini (2 directions)
+│   │   └── Footer.jsx          ← "LET'S TALK" géant + liens magnétiques
+│   ├── App.jsx                 ← Lenis init via useEffect
+│   ├── index.css               ← design system complet
+│   └── main.jsx
+```
+
+## 📸 Captures d'écran
+
+### Preloader — Compteur 0→100% + Slide-up exit
+![Preloader en action](C:\Users\maxim\.gemini\antigravity\brain\85e5ae5d-ad05-4c97-8c46-612bf212ffdf\preloader_instant_1773764603673.png)
+
+### Hero Section — Typographie géante avec stagger animation
+![Hero FRONTEND/DEVELOPER](C:\Users\maxim\.gemini\antigravity\brain\85e5ae5d-ad05-4c97-8c46-612bf212ffdf\preloader_start_1773764578290.png)
+
+### Hero + Travaux Récents visible
+![Hero + Projets](C:\Users\maxim\.gemini\antigravity\brain\85e5ae5d-ad05-4c97-8c46-612bf212ffdf\portfolio_hero_top_1773764564719.png)
+
+### Galerie des Projets — Scroll horizontal
+![Projects Gallery](C:\Users\maxim\.gemini\antigravity\brain\85e5ae5d-ad05-4c97-8c46-612bf212ffdf\portfolio_gallery_1773764611077.png)
+
+### Marquee + Footer "LET'S TALK"
+![Footer LET'S TALK](C:\Users\maxim\.gemini\antigravity\brain\85e5ae5d-ad05-4c97-8c46-612bf212ffdf\portfolio_hero_section_1773764552288.png)
+
+## 🎬 Enregistrement de session
+
+![Démo complète](C:\Users\maxim\.gemini\antigravity\brain\85e5ae5d-ad05-4c97-8c46-612bf212ffdf\portfolio_final_check_1773764524158.webp)
+
+## ✅ Fonctionnalités vérifiées
+
+| Fonctionnalité | Status |
+|---|---|
+| Smooth Scroll (Lenis vanilla) | ✅ |
+| Custom Cursor (dot + ring, spring physics) | ✅ |
+| Custom Cursor mix-blend-mode inversion | ✅ |
+| Preloader 0→100% + slide-up exit | ✅ |
+| Hero letters stagger animation (Framer Motion) | ✅ |
+| Horizontal scroll → vertical (useScroll + useTransform) | ✅ |
+| Cards projets (hover zoom + overlay) | ✅ |
+| Double Marquee infini (2 directions) | ✅ |
+| Footer "LET'S TALK" géant | ✅ |
+| Boutons magnétiques (GitHub, LinkedIn) | ✅ |
+| Responsive mobile (scroll vertical) | ✅ |
+| Curseur désactivé sur mobile | ✅ |
+
+## 🛠️ Notes techniques
+
+- **Lenis** : Utilisé en mode vanilla (`new Lenis()` + `requestAnimationFrame`) pour éviter le conflit de hook React avec `@studio-freight/react-lenis` sous React 19.
+- **`mix-blend-mode: difference`** : Appliqué sur les deux éléments du curseur — crée l'effet d'inversion des couleurs au survol des éléments blancs/clairs.
+- **Horizontal Scroll** : Le [Projects.jsx](file:///c:/Users/maxim/OneDrive/Bureau/sitevitrine/portfolio/src/components/Projects.jsx) utilise une section sticky de hauteur 300vh. `useScroll` mappe le progrès vertical en translation X via `useTransform`.
+- **Responsive** : Sur mobile (≤768px), le scroll horizontal devient une pile verticale via media query CSS inline + classes conditionnelles.
+
+## 🚀 Pour démarrer
+
+```bash
+cd sitevitrine/portfolio
+npm run dev
+```

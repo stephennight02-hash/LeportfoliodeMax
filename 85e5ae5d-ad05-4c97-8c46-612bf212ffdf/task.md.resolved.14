@@ -1,0 +1,19 @@
+# Refonte UI — Hyper-Modern Premium & Utile (V8.1)
+
+## Objectifs V8 Initiaux (Effet WOW)
+- [x] **Typographie** : `Outfit` et `Plus Jakarta Sans`.
+- [x] **Thème Sombre Premium** : Bg (`#050505`), Glows (`#EAB308`).
+- [x] **UI Elements** : Glassmorphism, animations riches.
+
+## Ajustements Finaux ("Aérer" et "Utile")
+- [x] **Aération (Whitespace)** : 
+  - Doubler les paddings verticaux (ex: `py-40`, `mb-32`).
+  - Augmenter significativement l'espacement (`gap`) dans les grilles Projets et Bénéfices.
+- [x] **Pivot Copywriting (De 'Premium' à 'Utile')** :
+  - *Hero* : Remplacer "spectaculaire" par "véritablement utile". Changer le badge pour "Outils Digitaux Utiles & Performants".
+  - *Projets* : Remplacer "Portfolio Actif" par "Réalisations concrètes".
+  - *Bénéfices* : Modifier le titre de la section : "Un site internet doit être utile" au lieu de "Pourquoi l'approche Premium ?". Focus sur le ROI (Retour sur investissement).
+  - *Footer* : "Construisons un site qui rapporte" au lieu de "surpasser la concurrence". Remplacer "Développeur Premium" par "Développeur Web Indépendant".
+
+## Intégration
+- [x] Vérification globale de la fluidité avec Lenis.

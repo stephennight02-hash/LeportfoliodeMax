@@ -1,0 +1,30 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Scroll
+01 — Hero
+F
+R
+O
+N
+T
+E
+N
+D
+D
+E
+V
+E
+L
+O
+P
+E
+R
+Je conçois des expériences web qui allient performance technique et esthétique soignée. Chaque pixel compte.
+React · Vite · Motion
+02 — Projets Sélectionnés
+Travaux
+Récents
+
+</current_dom>

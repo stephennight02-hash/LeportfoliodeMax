@@ -1,0 +1,26 @@
+# Portfolio Ultra-Avancé — Task Checklist
+
+## Phase 1 — Setup Projet
+- [x] Initialiser Vite + React dans `sitevitrine/portfolio`
+- [x] Installer dépendances : Tailwind CSS, Framer Motion, @studio-freight/react-lenis, etc.
+- [x] Configurer Tailwind + Google Fonts (Teko, Inter)
+
+## Phase 2 — Composants Core
+- [ ] `CustomCursor.jsx` — Curseur magnétique avec spring + mix-blend-mode
+- [ ] `Preloader.jsx` — Écran de chargement 0→100% avec slide-up exit
+- [ ] `MagneticButton.jsx` — Bouton attiré par le curseur
+
+## Phase 3 — Sections
+- [ ] `Hero.jsx` — Titre géant avec stagger animation lettre par lettre
+- [ ] `Projects.jsx` — Scroll horizontal contrôlé par défilement vertical (useScroll + useTransform)
+- [ ] `Marquee.jsx` — Bandeau infini de technologies
+- [ ] `Footer.jsx` — "LET'S TALK" géant + boutons magnétiques
+
+## Phase 4 — App & Layout
+- [ ] `App.jsx` — Intégration Lenis + SmoothScroll wrapping
+- [ ] `index.css` — Design system complet (couleurs, typo, variables CSS)
+
+## Phase 5 — Vérification
+- [ ] Lancer le dev server et vérifier le rendu
+- [ ] Vérifier le responsive mobile
+- [ ] Capture d'écran / walkthrough

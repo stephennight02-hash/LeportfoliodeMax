@@ -1,0 +1,15 @@
+# Refonte UI — Airy Editorial (V9) ✅
+
+## Phase 1 — Socle Design & Couleurs
+- [x] **Palette Organique** : Bg `#F4F3EF` (Sable), Text `#1D1D1B`, Accent `#2C4A3B` (Vert Forêt — fini le jaune).
+- [x] **Suppression** : glassmorphism, glows, fond noir.
+- [x] **Buttons** styles clean avec hover `translateY`.
+
+## Phase 2 — Composants (Aération Extrême)
+- [x] **Hero** : `pt-40 pb-56`, titre centré massif, texte épuré concentré sur l'essentiel.
+- [x] **Projets** : Layout horizontal (image 3/5 + texte 2/5), espacement `gap-56` entre cartes, fond blanc, très aéré.
+- [x] **Bénéfices** : Liste numérotée éditoriale (01, 02, 03, 04), séparateurs 1px fins, hover slide. Zéro carte, zéro icône.
+- [x] **Footer** : Fond Vert Forêt (`var(--accent-base)`), titre géant blanc, bouton CTA blanc arrondi.
+
+## Phase 3 — QA
+- [x] App.jsx mis à jour, Lenis conservé, cohérence globale vérifiée.

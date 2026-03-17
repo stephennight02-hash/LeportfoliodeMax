@@ -1,0 +1,48 @@
+# Portfolio Maxime Fivet — Quiet Luxury V6
+
+## 🏛️ L'Approche V6 ("Quiet Luxury")
+
+Pour répondre au brief extrêmement détaillé exigeant un design de niveau "Agence Premium", épuré, architectural et ciblant des professionnels de 40-60 ans, la V6 a été entièrement recodée.
+
+L'objectif : **La perfection de l'exécution, sans artifices ni gadgets.**
+
+Le site est disponible sur `http://localhost:5174` (ou `5173`).
+
+## 🎨 Design System Architectural
+
+Tout l'aspect visuel a été revu pour éliminer l'aspect "Template SaaS" ou "Hacker" :
+
+- **Couleurs Organiques** :
+  - Fond `Stone` (`#FAFAF9`) : Un blanc cassé très chaleureux, reposant pour les yeux.
+  - Texte `Anthracite` (`#282824`) : Un gris très profond qui remplace le noir agressif.
+  - Accent `Terracotta / Bronze` (`#A46D4D`) : Utilisé avec parcimonie pour souligner le prestige.
+- **Typographie de Caractère** :
+  - Titres : **Syne**. Une typographie sans-serif très large, assumée et impactante, utilisée par les grandes agences de design.
+  - Corps : **Manrope**. Ronde, neutre et d'une lisibilité mathématique parfaite.
+
+## 🏗️ Structure & Composants Innovants
+
+1. **Hero Section (L'Accroche)**
+   - Typographie géante en `Syne` avec contraste fort de taille.
+   - Les boutons ont perdu leur forme de "pilule" (`rounded-full`) pour des coins légèrement arrondis (`rounded-md`), leur donnant un aspect plus solide et sérieux (boutons physiques).
+   - Micro-interaction premium : le bouton s'élève délicatement au survol avec une ombre portée douce.
+
+2. **Projets ("Bento Grid" Asymétrique)**
+   - Abandon de la grille basique 3x3. Place à la **Bento Grid**.
+   - *L'Épicurien* prend 2 colonnes, *L'Atelier* prend 1 colonne, *Studio Ciseaux* prend toute la largeur en bas. 
+   - Les cartes ont des bordures ultra-fines (`border-stone-200`) sur fond blanc pur, comme des œuvres encadrées dans une galerie.
+   - Au survol, l'image subit un zoom interne lent (`scale(1.05)`) et la carte monte doucement vers la souris.
+
+3. **Expertise (L'Élégance Typographique)**
+   - Suppression complète des icônes SVG, qui font souvent trop "Start-up".
+   - Remplacement par une esthétique **Typographique** : de grands chiffres ("01", "02", "03") massifs en filigrane (`opacity: 0.15`), suivis de textes clairs séparés par une ligne de 1px. C'est le marqueur ultime du design "Quiet Luxury".
+
+4. **Footer Anchor**
+   - Le fond passe en Anthracite massif pour ancrer visuellement la fin de la page.
+   - Le texte de l'email est immense et blanc, réagissant en Terracotta au survol. 
+
+## ⚙️ Détails Techniques (Le "Pro Skill")
+
+Les animations (basées sur Framer Motion) ne sont plus démonstratrices (pas de rebonds complexes ni de lettres par lettres). Tout est basé sur un simple `fadeUp` (Disparu -> Remonte de 30px en apparaissant doucement) au fur et à mesure du scroll. 
+
+C'est soyeux, mature et immédiatement rassurant pour un dirigeant d'entreprise.
