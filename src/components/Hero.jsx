@@ -25,16 +25,12 @@ const Hero = () => {
       >
         {/* Logo - Universally appealing Blue */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <div style={{
-            width: 36, height: 36,
-            backgroundColor: 'var(--accent-base)',
-            borderRadius: 8,
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            boxShadow: '0 4px 10px rgba(37, 99, 235, 0.2)',
-          }}>
-            <span style={{ color: '#FFF', fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.1rem', lineHeight: 1 }}>M</span>
-          </div>
-          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1.1rem', color: 'var(--text-main)', letterSpacing: '-0.01em' }}>
+          <img 
+            src="/logomf.png" 
+            alt="Maxime Fivet Logo" 
+            style={{ height: 42, width: 'auto', display: 'block', borderRadius: 8 }} 
+          />
+          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1.25rem', color: 'var(--text-main)', letterSpacing: '-0.01em' }}>
             Maxime Fivet<span style={{ color: 'var(--accent-base)' }}>.</span>
           </span>
         </div>
@@ -93,7 +89,7 @@ const Hero = () => {
               padding: '0.4rem 1rem',
               borderRadius: '999px',
             }}>
-              Développeur Web Indépendant
+              Design Premium • Tarifs Indépendant
             </span>
           </motion.div>
 
@@ -111,8 +107,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.1, ease: [0.2, 0.8, 0.2, 1] }}
           >
-            Des sites vitrines qui<br className="hidden md:block" />
-            inspirent confiance et<br className="hidden md:block" />
+            Des sites vitrines qui <br className="hidden md:block" />
+            inspirent confiance et <br className="hidden md:block" />
             <span style={{ color: 'var(--accent-base)' }}>développent vos ventes.</span>
           </motion.h1>
           
